@@ -1,4 +1,5 @@
  $(document).ready(function(){
+	 
 	 $("#let_us").click(function(){
 	 if($('#let_us').hasClass('active')){
 		$('#let_us').removeClass('active');
@@ -7,6 +8,7 @@
 	 $('#let_us').addClass('active');
 	 $('#form').css('display','block')}
 	 });
+	 
 	 $(".pagination_dots li").click(function(){
 		$(".pagination_dots li").removeClass('active');
 		$(this).addClass('active');
@@ -14,9 +16,18 @@
 		$('.client').removeClass('act');
 		$('#client_' + element).addClass('act');
 	 });
+	 
+	 $("header nav ul li a").click(function() {
+		var anchorName = $(this).attr('id');
+
+		$('html, body').animate({
+			scrollTop: $("a[name=" + anchorName + "]").offset().top
+		}, 1000);
+	});
+
 	 $(function() {
 		$.scrollify({
-		section : "section",
+		section : ".scroll-section",
 		});
 	});
 	 //$(function() {

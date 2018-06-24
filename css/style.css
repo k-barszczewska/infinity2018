@@ -409,8 +409,31 @@ input.button  {
 aside {
 	position: fixed;
 	right:0;
-	top: 20vh;
+	top: 30%;
+	z-index: 1000000;
 }
+aside ul li {
+	list-style: none;
+}
+aside ul li a {
+	background: transparent url() no-repeat center center;
+	width: 35px;
+	height: 20px;
+	padding: 40px 30px;
+	display:block;
+	cursor: pointer;
+	opacity: 0.4;
+}
+aside ul li a#previous {
+	background-image: url('../img/scrollUp.png');
+	border-bottom: 1px solid #2d2d2d;
+}
+aside ul li a#next {
+	background-image: url('../img/scrollDown.png');
+}
+aside ul li a:hover {
+	opacity: 1;
+} 
 footer {
 	background-color: #242424;
 	color: #8f8f8f;
