@@ -1,0 +1,501 @@
+body {
+	background-color: #fff;
+	font-size: 16px;
+	color: #2d2d2d;
+	font-family: 'Mada', sans-serif;
+	padding: 0 0;
+	position: relative;
+	z-index: 0;
+	margin: 0;
+}
+header {
+    position: absolute;
+	top:0;
+    width: 100%;
+    z-index: 1000;
+   
+}
+header #logo {
+    display: inline-block;
+    float: left;
+    margin: -10px 0 0 8px;
+    width: 66px;
+    height: 66px;
+	background: transparent url('../img/infinity_logo.png') no-repeat center center;
+	border-top: 10px solid #62c017;
+}
+
+
+header nav {
+	padding-top:10px;
+}
+header nav ul li {
+	display: inline-block;
+    text-transform: uppercase;
+	border-right: 1px solid #fff;
+	color: #fff;
+	padding: 0.75em 0;
+	width:20%;
+	text-align: center;
+	}
+	
+header nav ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+	color: #fff; 
+	padding: 0.5em 2.5em;
+}
+button, .button{
+	font-family: 'Homenaje', sans-serif;
+	text-align: center;
+	font-size: 1.25em;
+	padding: .25em .7em;
+	vertical-align: baseline;
+	border: 0;
+    background-color: #62c017;
+	color: #fff;
+    -webkit-appearance: none;
+    outline: 0;
+	cursor: pointer;
+	border-radius: 4px;
+	}
+section {
+	overflow:hidden;
+    position: relative;
+    height: auto;
+    box-sizing: border-box;
+	padding-top: 3%;
+	padding-bottom: 5%;
+	z-index:1;
+}
+section h2, section h3 {
+	font-family: 'Homenaje', sans-serif;
+	text-align: center;
+	font-size: 2.3em;	
+	font-weight: lighter;
+	letter-spacing: -.01em;
+}
+
+section h2 {
+	text-transform: uppercase;
+	font-size: 3.75em;
+	line-height: 1.15em;
+	color: #fff;
+	z-index:10;
+	position: absolute;
+	top: 30%;
+	width:100%;
+	letter-spacing: -.05em;
+}
+section h2 span {
+	color: #2d2d2d;
+}
+section a.section_anchor {
+	padding-bottom: 10vh;
+	    display: block;
+}
+section p {
+	font-size: 1.25em;
+	line-height: 2em;
+	padding-left: 3.2em;
+	padding-right: 2em;
+	max-width:100%;
+	letter-spacing: -.02em;
+}
+.section_number {
+	position: absolute;
+	right: 0;
+	top: 35%;
+	padding: 1.2em 1.5em;
+	border-bottom: 1px solid #2d2d2d;
+	font-family: 'Homenaje', sans-serif;
+	font-size: 1.75em;
+	letter-spacing: .1em;
+}
+section#sec_3 .section_number {
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+.center {
+	text-align: center;
+}
+.quote {
+	position: relative;
+	background: transparent url('../img/quote.png') no-repeat .1em .1em;
+}
+section#sec_1 {
+	background: transparent url('../img/bg_praktyki_1.jpg') no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+}
+section#sec_1:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    background-image: url('../img/bg_pattern.png');
+background-repeat: repeat;
+}
+section#sec_3 {
+	background: transparent url('../img/bg_praktyki_2.jpg') no-repeat center center;
+	background-size: cover;		
+}
+section#sec_3 h3 {
+	color: #fff;
+}
+.client {
+	display: none;
+	margin-bottom: 2em;
+}
+.client.act {
+	display: block;
+}
+section#sec_3 p {
+	font-size: 1.5em;
+	margin-left: 45%;
+	padding-left: 2em;
+}
+section#sec_3 p.quoter {
+	font-size: 1.15em;
+}
+.quoter  .company{
+	color: #fff;
+	text-decoration: underline;
+}
+section#sec_3 ul li {
+	display: inline-block;
+	list-style: none;
+}
+ul.white-box li  a{
+	color: #fff;
+	border: 1px solid #fff;
+	padding:  .2em .5em .1em;
+	font-size: .85em;
+	cursor: pointer;
+	text-decoration: none;
+}
+ul.white-box li a:hover {
+	color: #42a85c;
+	border: 1px solid #fff;
+	background-color: #fff;
+}
+ul.pagination_dots {
+	margin: 4em auto;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+ul.pagination_dots li span{
+	display: block;
+	height: 16px;
+	width: 16px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	background-color: #fff;
+	margin-left: 15px;
+	opacity: 0.5;
+}
+ul.pagination_dots li:hover span, section#sec_3 ul.pagination_dots li.active span {
+	opacity: 1;
+}
+
+section#sec_3 img {
+	display: block;
+	float: left;
+	padding: 0 3em 0 0;
+	max-width: 50%;
+}
+section#sec_4 {
+	padding-bottom: 15%
+}
+.products_box .product_item {	
+	display: inline-block;
+	float: left;
+	width: 25%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 2% 5%;
+	position: relative;
+}
+.product_item:hover {	
+	background: #62c017;
+}
+.product_item .product_text{	
+	display: none;
+	font-size: .9em;
+	line-height: 1em;
+	text-align: left;
+	padding: .5em 2em 2em;
+	width: 100%;
+	background: #62c017;
+	color: #fff;
+	position:absolute;
+	top: 150px;
+	left:0;
+	box-sizing: border-box;
+	z-index: 2;
+}
+.product_item:hover .product_text{	
+	display: block;
+}
+.product_item span{
+	background: transparent url('../img/icons_sprite.png') no-repeat;
+	width: 140px;
+	height: 140px;
+	display: block;
+}
+.product_item span.logo1 {
+	background-position: 0 0;
+}
+.product_item:hover span.logo1 {
+	background-position: 0 -420px;
+}
+.product_item span.logo2 {
+	background-position: -140px 0;
+}
+.product_item:hover span.logo2 {
+	background-position: -140px -420px;
+}
+.product_item span.logo3 {
+	background-position: -280px 0;
+}
+.product_item:hover span.logo3 {
+	background-position: -280px -420px;
+}
+.product_item span.logo4 {
+	background-position: -420px 0;
+}
+.product_item:hover span.logo4 {
+	background-position: -420px -420px;
+}
+.product_item span.logo5 {
+	background-position: 0 -140px;
+}
+.product_item:hover span.logo5 {
+	background-position: 0 -560px;
+}
+.product_item span.logo6 {
+	background-position: -140px -140px;
+}
+.product_item:hover span.logo6 {
+	background-position: -140px -560px;
+}
+.product_item span.logo7 {
+	background-position: -280px -140px;
+}
+.product_item:hover span.logo7 {
+	background-position: -280px -560px;
+}
+.product_item span.logo8 {
+	background-position: -420px -140px;
+}
+.product_item:hover span.logo8 {
+	background-position: -420px -560px;
+}
+.product_item span.logo9 {
+	background-position: 0 -280px;
+}
+.product_item:hover span.logo9 {
+	background-position: 0 -700px;
+}
+.product_item span.logo10 {
+	background-position: -140px -280px;
+}
+.product_item:hover span.logo10 {
+	background-position: -140px -700px;
+}
+.product_item span.logo11 {
+	background-position: -280px -280px;
+}
+.product_item:hover span.logo11 {
+	background-position: -280px -700px;
+}
+.product_item span.logo12 {
+	background-position: -420px -280px;
+}
+.product_item:hover span.logo12 {
+	background-position: -420px -700px;
+}
+section#sec_5 {
+	background: #f9f9f9 url('../img/bg_map.jpg') no-repeat center center;
+	background-size: cover;
+	padding-top: 7%;
+	padding-bottom: 8%;
+}
+section#sec_5 .map_info {
+	line-height: 1.15em;
+	position: relative;
+	background: transparent url('../img/kompas.png') no-repeat 0 0;
+	transition: background .5s linear, color .5s linear;
+}
+section#sec_5 .map_info:hover {
+	background-position: 0 bottom;
+	color: #1c3706;
+}
+section#sec_6 {
+	background-color: #f9f9f9;
+}
+h3.contact {
+	text-align:left;
+	display:inline;
+}
+button#let_us {
+	float: right;
+}
+button#let_us .arr{
+	display: inline-block;
+	background: transparent url('../img/arrow.png') no-repeat center center;
+	padding-left: .5em;
+	width: 1em;
+	height: 1em;
+	vertical-align: top;
+	transition: transform 0.25s linear;
+	transform: rotate(180deg);
+}
+button#let_us.active .arr {
+	transform: rotate(0deg);
+}
+#form {
+	display: none;
+}
+#form  p {
+	font-size: 1.15em;
+	line-height: 1.5em;
+}
+#form form {
+	text-align: center;	
+}
+#form form label{
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-align: left;
+}
+
+#form input[type=text], #form input[type=number] {
+	display: inline-block;
+    padding: 0 .1em;
+    background-color: transparent;
+	box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #2d2d2d;
+	margin-left: .5em;
+	color: #2d2d2d;
+    font-family: 'Mada', sans-serif;
+	font-size: 1.25em;
+	letter-spacing: -.05em;
+}
+#form form label[for=agreement]{
+	font-size: 1em;
+	background: transparent url('../img/checkbox.png') no-repeat left center;
+	padding-left: 1.8em;
+}
+#form form input[type="checkbox"]:checked+label{
+	background-image:url('../img/checkbox_active.png');
+}
+#form input[type=checkbox] {
+	width: 1.4em;
+	height: 1.4em;
+	opacity: 0	
+}
+input.button  {
+	background: #62c017 url('../img/arrow_right.png') no-repeat 4.75em center;
+	padding-right: 1.5em;
+	margin-top: 1em;
+}
+aside {
+	position: fixed;
+	right:0;
+	top: 20vh;
+}
+footer {
+	background-color: #242424;
+	color: #8f8f8f;
+	font-size: .75em;
+	line-height: 1em;
+}
+.sr-only {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+#cookie {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99999;
+    padding: .5em 0 1em;
+    background-color: rgba(34, 34, 34, 0.83);
+	color: #fff;
+    display: none;
+}
+#cookie.vis {
+	display:block;
+}
+#cookie .cont {
+	background: transparent url('../img/cookie.png') no-repeat left center;
+	padding: .5em 3em;
+	font-size: .9em;
+}
+#cookie .cont p {
+	display: inline-block;
+	width:80%;
+	padding-left:1em;
+}
+#cookie .cont button {
+	float:right;
+	margin-top: 1.5em;
+	font-size: 1em;
+}
+#cookie .cont button span {
+	transform: rotate(45deg);
+	font-size: 2em;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: .5;
+	font-family: 'Mada', sans-serif;
+}
+#cookie .cont a {
+	color: #62c017;
+}
+
+
+@media only screen and (max-width:1800px) {
+.cont {width: 950px; margin: 0 auto;}
+main {font-size: 1.2em;} 
+}
+
+@media only screen and (max-width:1024px) {
+.cont {width: 800px; margin: 0 auto;}
+main {font-size: 1.25em;} 
+section p {font-size: 1em !important; line-height: 1.75em;}
+section h2, section h3 {font-size: 2.5em;}
+header nav ul li a {padding: 0.5em .8em;}
+.section_number {font-size: 1.2em; top: 10%;}
+button, .button {font-size: 1em;}
+.products_box .product_item {width: 50%;}
+.product_item .product_text {top: 130px;}
+header nav ul li  {padding: .35em 0; }
+}
+@media only screen and (max-width:850px) {
+.cont {max-width: 600px;}
+section p {line-height: 1.25em;}
+section h2, section h3 {font-size: 2em;}
+#cookie .cont p {width: 60%;}
+header nav ul li  {width: 40%; padding: .35em 0; border: 1px solid #fff; margin: 2px;}
+}
+@media only screen and (max-width:650px) {
+.cont {max-width: 450px;}
+}
+@media only screen and (max-width:450px) {
+.cont {max-width: 350px;}
+}
+
